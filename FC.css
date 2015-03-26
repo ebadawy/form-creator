@@ -1,0 +1,238 @@
+*{
+	margin:0;
+	padding:0;	
+	font-family: tahoma, "Times New Roman", Times, serif;
+}
+
+#selectDiv {
+	margin-left: 10px;
+	height: 40px;
+}
+
+
+
+.tflLabel, .tflHint, .tflType, .tflRequired, .tflFilter{
+	width: 95px;
+	height: 30px;
+	text-align: center;
+	line-height: 30px;
+	vertical-align: center;
+	float: left;
+}
+.tfiLabel, .tfiHint, .tfiType , .tfiFilter{
+	height: 30px;
+	width: 210px;
+	float: left;
+}
+
+.listItemLabel {
+	width: 95px;
+	height: 30px;
+	text-align: center;
+	line-height: 30px;
+	vertical-align: center;
+	float: left;
+}
+
+.listItemtf {
+	height: 30px;
+	width: 205px;
+	float: left;
+
+}
+
+.lilLabel, .liltype, .lilRequired{
+	width: 95px;
+	height: 30px;
+	text-align: center;
+	line-height: 30px;
+	vertical-align: center;
+	float: left;
+}
+
+.liiLabel, .liitype{
+	height: 30px;
+	width: 200px;
+	float: left;
+}
+
+.lilItemsNo{
+	width: 95px;
+	height: 30px;
+	text-align: center;
+	line-height: 30px;
+	vertical-align: center;
+	float: left;
+}
+.lilSort {
+	width: 50px;
+	height: 30px;
+	text-align: center;
+	line-height: 30px;
+	vertical-align: center;
+	float: left;
+}
+
+.liiItemsNo{
+	height: 30px;
+	width: 55px; 
+	float: left;
+}
+
+.liiSort{
+	height: 30px;
+	width: 103px;
+	float: left;
+}
+
+.ddmlRequired{
+	width: 95px;
+	height: 30px;
+	text-align: center;
+	line-height: 30px;
+	vertical-align: center;
+	margin-bottom: 8.5px; 
+}
+
+.ddmiLabel, .ddmiItemsNo, .dmmItemtf {
+	height: 30px;
+	width: 210px;
+	float: left;
+}
+.ddmlItemsNo, .ddmlLabel, .ddmItemLabel{
+	width: 95px;
+	height: 30px;
+	text-align: center;
+	line-height: 30px;
+	vertical-align: center;
+	float: left;
+}
+
+.main {
+	width: 860px; 
+	height: 100%; 
+	overflow: hidden;
+	margin: auto;
+	margin-top: 30px;
+	background-color: #FFFFFF;
+	box-shadow: 0 0 4px 1px rgb(210, 210, 210);
+
+}
+
+.btnPanel {
+	margin-right : 2px;
+	margin-left : 4px;
+	width: 102px; 
+	height: 500px;
+	float: left;
+	overflow-y: auto;
+}
+	
+.header {
+	margin-right: 32px;
+	width: 90px; 
+	float: right; 	
+}
+	
+.input {
+	margin-right : 2px;
+	border-right: 1px solid #C8C8C8; 
+	width: 350px; 
+	height: 500px;
+	float: left;
+	overflow-y: auto;
+	
+}
+
+body {
+	background-color: #F1F1F1;
+	
+}
+
+.footer {
+	height: 160px;
+	width: 173px;
+	margin-right: 10px;
+	background-image : url('IEEEASU.png');
+	background-position:  bottom;
+	background-repeat: no-repeat;	
+	float: right;
+}
+		
+.output {
+	border-right: 1px solid #C8C8C8; 
+	margin-left : 1px;
+	width: 389px;
+	height: 500px; 
+	float: left;
+	overflow-y: auto;
+	overflow-x: auto;
+}
+
+.deleteButton
+{
+	width: 10px;
+	height: 20px;
+	float: right;
+	font-weight:bold;
+	font-size: 12px;
+	text-decoration: none;	
+	display: none;
+}
+
+.block {
+	margin-top: 3px;
+	margin-right: 7px;
+	margin-left: 3px;
+	width: 366px;
+	height:50px;
+	background-color: #FFFFFF;
+	float: left;
+}
+
+li {
+	list-style-type: none;
+}
+
+#addBlock:link, #addBlock:visited, #create:link, #create:visited {
+	text-decoration: none;	
+	display: block;
+	color:#FFFFFF;
+	background-color : rgb(70, 100, 190);
+	width: 90px; 
+	text-align: center;
+	padding: 4px;
+	margin-top: 3px;
+	float: right;
+	
+}
+.ddmBlock {
+	margin-top: 3px;
+	margin-right: 7px;
+	margin-left: 3px;
+	width: 366px;
+	height: 50px;
+	background-color: #FFFFFF;
+	float: left;
+}
+.ddmLabel {
+	width: 120px;
+	height: 50px;
+	float: left;
+	line-height: 50px;
+	vertical-align: center;
+	text-align: center;
+	margin-top : 0px;
+}
+					
+.ddmInputField {
+	width: 230px;
+	height: 50px;
+	float: left;
+	line-height: 50px;
+	vertical-align: center;
+}
+
+#addBlock:hover, #addBlock:active, #create:hover, #create:active {
+	background-color : rgb(40, 80, 150);
+}

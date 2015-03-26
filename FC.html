@@ -1,0 +1,143 @@
+	
+<!DOCTYPE html>
+<html>
+	
+	<head>
+	<link rel= "stylesheet" href= "FC.css" type="text/css">
+  	
+  	<script src="jquery-1.10.2.js"></script>
+	<script src="jquery.ui.core.js"></script>
+	<script src="jquery.ui.widget.js"></script>
+	<script src="jquery.ui.mouse.js"></script>
+	
+	<script src="jquery.ui.sortable.js"></script>	
+	<script src="jquery.ui.slider.js"></script>	
+
+	<script src = "FC.js"></script>
+	
+	</head>			
+	<body style="background-color: #F1F1F1;">
+		<div class = "main" name = "main">
+			<br />
+			<div class = "input" name = "input" style="">
+				<div id = "selectDiv">
+				<select name = "inputType" class  = "inputType" style="width: 204px; height: 28px" disabled>
+					<option value="0" id = "default"></option>
+					<option value="1">Text field</option>
+					<option value="2">List</option>
+					<option value="3">Drop Down Menu</option>
+				</select>
+				</div>
+				<div id = "controlDiv">
+					<ul id= "ctf" style="display: none">
+						
+						<li>
+							<div class = "tflRequired" style=""><input class = "TfiRequired" type="checkbox" style="width: 15px;height: 13px"/>Required</div>
+						</li><br /><br />
+						<li>
+							<div class = "tflLabel">Label</div>
+							<div class = "tfiLabel"><input class = "TfiLabel" type="text" style="width: 206px; height: 25px"/></div>
+						</li>
+						<li>
+							<div class = "tflType">Type</div>
+							<div class = "tfiType">
+								<select class = "TfiType" name="textType" style="width: 210px; height: 28px">
+									<option value = "text">Normal Text</option>
+									<option value = "email">E-Mail Adress</option>
+									<option value = "number">Number</option>
+									<option value = "url">URL</option>
+								</select>
+							</div>
+						</li>
+						<li>
+							<div class = "tflFilter">Filter</div>
+							<div class = "tfiFilter"><input class = "TfiFilter" type="text" style="width: 206px; height: 25px"/></div>
+						</li>
+						<li>
+							<div class = "tflHint">Hint</div>
+							<div class = "tfiHint"><input class = "TfiHint" type="text" style="width: 206px; height: 25px"/></div>
+						</li>
+						
+					</ul>
+					
+					<ul id= "cl" style="display: none">
+						<li>
+							<div class = "lilRequired" style=""><input class = "LilRequired" type="checkbox" style="width: 15px;height: 13px"/>Required</div>
+						</li><br /><br />
+						<li>
+							<div class = "lilLabel">Label</div>
+							<div class = "liiLabel"><input class = "LiiLabel" type="text" value = "newItem1" style="width: 206px; height: 25px"/></div>
+						</li>
+						<li>
+							<div class = "liltype">Type</div>
+							<div class = "liitype">
+								<select name="textType" class = "Liitype" style="width: 210px; height: 28px">
+									<option value="Normal list">Normal list</option>
+									<option value = "Check box">Check box</option>
+									<option value = "Radio button">Radio button</option>
+								</select>
+							</div>
+						</li>
+						<li>
+							<div class = "lilItemsNo">Items No.</div>
+							<div class = "liiItemsNo"><input class = "LiiItemsNo" type="text" value = "1" style="width: 50px; height: 25px; text-align: center"  required/></div>
+						</li>
+						<li>
+							<div class = "lilSort">Sort</div>
+							<div class = "liiSort">
+								<select name="sort" class = "LiiSort" style="width: 105px; height: 28px">
+									<option>Ordered List</option>
+									<option>Unordered List</option>
+								</select>
+							</div>
+						</li>
+						<li class = "itemsList">
+							<div class = "listItemLabel">#1</div> 
+							<div class = "listItemtf" id = "1"><input class = "item1" id = "" type="text" value = "" style="width: 206px; height: 25px"/></div>
+						</li>
+						
+					</ul>
+						<ul id= "cddm" style="display: none">
+						<li>
+							<div class = "ddmlRequired" style=""><input class = "DdmlRequired" type="checkbox" style="width: 15px;height: 13px"/>Required</div>
+						</li>
+						<li>
+							<div class = "ddmlLabel">Label</div>
+							<div class = "ddmiLabel"><input class = "ddmilabel" type="text" value = "newItem1" style="width: 206px; height: 25px"/></div>
+						</li>
+						
+						<li>
+							<div class = "ddmlItemsNo">Items No.</div>
+							<div class = "ddmiItemsNo"><input class = "ddmiitemsNo" type="text" value = "0" style="width: 50px; height: 25px; text-align: center"  required/></div>
+						</li>
+						
+						<li class = "ddmList">
+
+						</li>
+						
+					</ul>
+					
+				</div>
+			</div>
+			<ul class = "output" name = "output" id = "sortable" unselectable="on">
+			</ul>
+				<div class = "btnPanel">
+					<a href = "#" id = "addBlock" >block</a>
+					<a href = "#" id = "create" >create</a>
+				</div>
+			</div>
+		<div class = "footer"></div>
+		<script>
+			var h = window.innerHeight;
+			h = (h < 585) ? 585 : h-95;
+			$(".main").css("height", h+"px");
+			$(".input").css("height", (h-33)+"px");
+			$(".output").css("height", (h-33)+"px");
+			$(".btnPanel").css("height", (h-33)+"px");
+			$("#create").css("margin-top", (h-95)+"px");
+			$(".footer").css("height", 55+"px");
+		</script>
+	</body>	
+</html>
+
+

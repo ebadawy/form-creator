@@ -1,0 +1,318 @@
+
+<!DOCTYPE html>
+<html>
+	
+	<head>
+	<link rel= "stylesheet" href= "FC.css" type="text/css"></style>
+  	
+  	<script src="jquery-1.10.2.js"></script>
+	<script src="jquery.ui.core.js"></script>
+	<script src="jquery.ui.widget.js"></script>
+	<script src="jquery.ui.mouse.js"></script>
+	
+	<script src="jquery.ui.sortable.js"></script>	
+	<script src="jquery.ui.slider.js"></script>	
+
+	<script src = "FC.js"></script>
+	
+	</head>			
+	<body style="background-color: #F1F1F1;">
+	
+		
+		<div class = "main" name = "main">
+			<!--
+			<div class = "header">
+			
+			</div>
+			
+			-->
+			<br />
+			<div class = "input" name = "input" style="">
+				<div id = "selectDiv">
+				<select name = "inputType" class  = "inputType" style="width: 204px; height: 28px" disabled>
+					<option value="0" id = "default"></option>
+					<option value="1">Text field</option>
+					<option value="2">List</option>
+					<option value="3">Drop Down Menu</option>
+				</select>
+				</div>
+				<div id = "controlDiv">
+					<ul id= "ctf" style="display: none">
+						
+						<li>
+							<div class = "tflRequired" style=""><input class = "TfiRequired" type="checkbox" style="width: 15px;height: 13px"/>Required</div>
+						</li><br /><br />
+						<li>
+							<div class = "tflLabel">Label</div>
+							<div class = "tfiLabel"><input class = "TfiLabel" type="text" style="width: 206px; height: 25px"/></div>
+						</li>
+						<li>
+							<div class = "tflType">Type</div>
+							<div class = "tfiType">
+								<select class = "TfiType" name="textType" class = "textType" style="width: 210px; height: 28px">
+									<option value = "text">Normal Text</option>
+									<option value = "email">E-Mail Adress</option>
+									<option value = "number">Number</option>
+									<option value = "url">URL</option>
+								</select>
+							</div>
+						</li>
+						<li>
+							<div class = "tflFilter">Filter</div>
+							<div class = "tfiFilter"><input class = "TfiFilter" type="text" style="width: 206px; height: 25px"/></div>
+						</li>
+						<li>
+							<div class = "tflHint">Hint</div>
+							<div class = "tfiHint"><input class = "TfiHint" type="text" style="width: 206px; height: 25px"/></div>
+						</li>
+						
+					</ul>
+					
+					<ul id= "cl" style="display: none">
+						<li>
+							<div class = "lilRequired" style=""><input class = "LilRequired" type="checkbox" style="width: 15px;height: 13px"/>Required</div>
+						</li><br /><br />
+						<li>
+							<div class = "lilLabel">Label</div>
+							<div class = "liiLabel"><input class = "LiiLabel" type="text" value = "newItem1"style="width: 206px; height: 25px"/></div>
+						</li>
+						<li>
+							<div class = "liltype">Type</div>
+							<div class = "liitype">
+								<select name="textType" class = "Liitype" style="width: 210px; height: 28px">
+									<option value="Normal list">Normal list</option>
+									<option value = "Check box">Check box</option>
+									<option value = "Radio button">Radio button</option>
+								</select>
+							</div>
+						</li>
+						<li>
+							<div class = "lilItemsNo">Items No.</div>
+							<div class = "liiItemsNo"><input class = "LiiItemsNo" type="text" value = "1" style="width: 50px; height: 25px; text-align: center"  required/></div>
+						</li>
+						<li>
+							<div class = "lilSort">Sort</div>
+							<div class = "liiSort">
+								<select name="sort" class = "LiiSort" style="width: 105px; height: 28px">
+									<option>Ordered List</option>
+									<option>Unordered List</option>
+								</select>
+							</div>
+						</li>
+						<li class = "itemsList">
+							<div class = "listItemLabel">#1</div> 
+							<div class = "listItemtf" id = "1"><input class = "item1" id = "" type="text" value = "" style="width: 206px; height: 25px"/></div>
+						</li>
+						
+					</ul>
+					
+					<!------------------------------>
+					<ul id= "cddm" style="display: none"> <!--style="display: none"-->
+						<li>
+							<div class = "ddmlRequired" style=""><input class = "DdmlRequired" type="checkbox" style="width: 15px;height: 13px"/>Required</div>
+				<!--		<div class = "ddmlRequired" style=""><input class = "ddmlRequired" type="checkbox" style="width: 15px;height: 13px"/>Required</div>		-->
+						</li>
+						<li>
+							<div class = "ddmlLabel">Label</div>
+							<div class = "ddmiLabel"><input class = "ddmilabel" type="text" value = "newItem1"style="width: 206px; height: 25px"/></div>
+						</li>
+						
+						<li>
+							<div class = "ddmlItemsNo">Items No.</div>
+							<div class = "ddmiItemsNo"><input class = "ddmiitemsNo" type="text" value = "0" style="width: 50px; height: 25px; text-align: center"  required/></div>
+						</li>
+						
+						<li class = "ddmList">
+							<!--
+							<div class = "ddmItemLabel">#1</div> 
+							<div class = "dmmItemtf" id = "1"><input class = "item1" id = "" type="text" value = "" style="width: 206px; height: 25px"/></div>
+							-->
+						</li>
+						
+					</ul>
+					<!------------------------------>
+					
+				</div>
+			</div>
+			<ul class = "output" name = "output" id = "sortable" unselectable="on">
+				<!--
+				<select name = "inputType" class  = "inputType" style="width: 204px; height: 28px" disabled>
+					<option value="0" id = "default"></option>
+					<option value="1">Text field</option>
+					<option value="2">List</option>
+				</select>					
+				-->
+				<!--
+				<li class = "ddmBlock" id = "ddmBlock1" name ="">
+					<div id = "label2" class = "ddmLabel">newItem1</div>
+					<div id = "input2" class = "inputField">
+						<ul class = "ddmInputField" name = "orderList">
+							<li>
+								<select name = "inputType" class  = "inputType" style="width: 230px; height: 28px">
+									<option value="0">Test</option>
+									<option value="1">Text field</option>
+									<option value="2">List</option>
+								</select>	
+							</li>						
+						</ul>	
+					</div>
+					<a href = "#" id = "delete2" class = "deleteButton">x</a>
+				</li>
+			-->
+
+				<style>
+					.ddmBlock {
+						border: 1px solid blue;
+						margin-top: 3px;
+						margin-right: 7px;
+						margin-left: 3px;
+						width: 366px;
+						height: 50px;
+						background-color: #FFFFFF;
+						float: left;
+					}
+				    .ddmLabel {
+				    	border : 1px solid red;
+						width: 120px;
+						height: 50px;
+						float: left;
+						line-height: 50px;
+						vertical-align: center;
+						text-align: center;
+						margin-top : 0px;
+				    }
+					
+					.ddmInputField {
+				    	border:1px solid black;
+						width: 230px;/*230*/
+						height: 50px;
+						float: left;
+						line-height: 50px;
+						vertical-align: center;
+				    }
+					
+				</style>
+				<!--
+				<li class = "liBlock" id = "liBlock1" name ="">
+					<div id = "label2" class = "liLabel">newItem1</div>
+					<div id = "input2" class = "inputField">
+						<ul class = "liInputField1" name = "orderList">
+							<li  style="list-style-type: decimal-leading-zero"><input type = "checkbox" name = "aces"/>ACES</li>						
+						</ol>	
+					</div>
+					<a href = "#" id = "delete2" class = "deleteButton">x</a>
+				</li>
+				
+				<style>
+					.liBlock {
+						border: 1px solid blue;
+						margin-top: 3px;
+						margin-right: 7px;
+						margin-left: 3px;
+						width: 366px;
+						height: 50px;
+						background-color: #FFFFFF;
+						float: left;
+					}
+					.liLabel {
+						border : 1px solid green;
+						width: 120px;
+						height: 50px;
+						float: left;
+						line-height: 50px;
+						vertical-align: center;
+						text-align: center;
+						margin-top : 0px;
+					}
+					.inputField {
+						border : 1px solid green;
+						margin-left: 35px;
+						width: 195px;
+						height: 50px;
+						float: left;
+						line-height: 20px;
+						vertical-align: center;
+					}
+				</style>
+				-->
+				<!--
+				<li class = "block" id = "block1">
+					<div id = "label2" class = "label">newItem1</div>
+					<div id = "input2" class = "inputField">textField</div>
+					<a href = "#" id = "delete2" class = "deleteButton">x</a>
+				</li>
+				
+				-->
+			</ul>
+			
+			<!--
+			<div class = "output" name = "output" style="">
+				
+				<div class = "block" id = "block1">
+					<div id = "label1"></div>
+					<div id = "input1"></div>
+					<a href = "#" id = "delete1" class = "deleteButton">x</a>
+				</div> 
+				
+				<div id = "block2">
+					<div id = "label2"></div>
+					<div id = "input2"></div>
+					<a href = "#" id = "delete2" class = "deleteButton">x</a>
+				</div>
+				<div id = "block3">
+					<div id = "label3"></div>
+					<div id = "input3"></div>
+					<a href = "#" id = "delete3" class = "deleteButton">x</a>
+				</div>
+				<div id = "block4">
+					<div id = "label4"></div>
+					<div id = "input4"></div>
+					<a href = "#" id = "delete4" class = "deleteButton">x</a>
+				</div>
+				<div id = "block5">
+					<div id = "label5"></div>
+					<div id = "input5"></div>
+					<a href = "#" id = "delete5" class = "deleteButton">x</a>
+				</div>
+				<div id = "block6">
+					<div id = "label6"></div>
+					<div id = "input6"></div>
+					<a href = "#" id = "delete6" class = "deleteButton">x</a>
+				</div>
+				<div id = "block7">
+					<div id = "label7"></div>
+					<div id = "input7"></div>
+					<a href = "#" id = "delete7" class = "deleteButton">x</a>
+				</div>
+				<div id = "block8">
+					<div id = "label8"></div>
+					<div id = "input8"></div>
+					<a href = "#" id = "delete8" class = "deleteButton">x</a>
+				</div>	
+				-->
+				<div class = "btnPanel">
+					<a href = "#" id = "section" >section</a>
+					<a href = "#" id = "addBlock" >block</a>
+					<a href = "#" id = "separator" >separator</a>
+					<a href = "#" id = "evaluate" >evaluate</a>
+				</div>
+			</div>
+			
+		
+		<!--<script src = "jquery.js"></script>
+		<script src="jquery-ui.js"></script>-->
+		<div class = "footer"></div>
+		<script>
+			var h = window.innerHeight;
+			h = (h < 585) ? 585 : h-95;
+			$(".main").css("height", h+"px");
+			$(".input").css("height", (h-33)+"px");
+			$(".output").css("height", (h-33)+"px");
+			$(".btnPanel").css("height", (h-33)+"px");
+			$("#evaluate").css("margin-top", (h-157)+"px");
+			$(".footer").css("height", 55+"px");
+		</script>
+	</body>	
+</html>
+
+
